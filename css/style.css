@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+.intro {
+    background-color:#27272a; 
+    width: 100%;
+    height: 100%;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+}
+
+.intro-bg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.intro-bg > img{
+    height: 100%;
+    width: auto;
+    /* object-fit: cover; */
+}
+
+.content-container {
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    align-content: center;
+    height: 100%;
+
+}
+
+.content-container > img{   
+    width: 250px;
+    height: auto;
+}
+
+.content-container p{
+    color: white;
+    width: 50%;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.content-container > button{
+    width: 300px;
+    height: 50px;
+    font-size: 1.2em;
+    border: 2px white solid;
+    background: none;
+    color: white;
+}
+
+.title-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    align-content: center;
+    align-items: center;
+}
+
+.title-section h2{
+    font-size: 3em;
+    width: 40%
+}
+
+.title-section p{
+    font-size: 1.2em;
+    line-height: 1.4em;
+    width: 50%;
+}
