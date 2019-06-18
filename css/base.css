@@ -6,10 +6,10 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 }
 
 body {
-	--color-text: #4800d4;
+	--color-text: #419B93;
     --color-bg: #e8e8e8;
-    --color-link: #ec1752;
-    --color-link-hover: #eb1851;
+    --color-link: #419B93;
+    --color-link-hover: #419B93;
     --color-info: #272526;
     --grid-item-bg: #f1f1f1;
     --color-close: #ec1752;
@@ -384,6 +384,8 @@ main {
 	  }
 	.content__item-text p {
 		margin-bottom: 10px;
+		font-weight: 100;
+		line-height: 1.4em; 
 	}
 	.content__item-img {
 		max-width: none;
