@@ -60,8 +60,13 @@ body{
 .content-container p{
     color: white;
     width: 50%;
-    font-size: 1.2em;
+    font-size: 2em;
     text-align: center;
+    font-family: monospace;
+}
+
+.autor{
+    margin-top: 30px;
 }
 
 .content-container > button{
@@ -73,6 +78,11 @@ body{
     color: white;
 }
 
+.content-container > button a{
+    color: white;
+}
+
+
 .title-section{
     width: 100%;
     display: flex;
@@ -82,30 +92,52 @@ body{
     align-items: center;
 }
 
+.title-section-projeto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0px;
+    align-content: center;
+    align-items: center;
+}
+
 .title-section h2{
     font-size: 3em;
-    width: 40%
+    width: 50%
+}
+
+.title-section-projeto h2{
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .title-section p{
     font-size: 1.2em;
     line-height: 1.4em;
-    width: 50%;
+    width: 40%;
+    color: #000 !important;
+}
+.title-section-projeto p{
+    font-size: 1.2em;
+    line-height: 1.4em;
+    width: 60%;
+    color: #000 !important;
 }
 
 .title-section button{
     width: 30%;
     height: 50px;
     font-size: 1.2em;
-    border: 3px black solid;
+    border: 2px black solid;
     background: none;
     color: black;
-    transition: border-width 0.6s linear;
-
 }
-
-
-.title-section button:hover { border-width: 10px; }
+.title-section button a {
+    color: black;
+}
 
 #instafetch{
     display: flex;
