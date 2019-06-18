@@ -97,11 +97,15 @@ body{
     width: 30%;
     height: 50px;
     font-size: 1.2em;
-    border: 2px black solid;
+    border: 3px black solid;
     background: none;
     color: black;
+    transition: border-width 0.6s linear;
 
 }
+
+
+.title-section button:hover { border-width: 10px; }
 
 #instafetch{
     display: flex;
