@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <link rel="stylesheet" href="https://use.typekit.net/ubs1svg.css">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/instafetch.js/1.5.0/instafetch.min.js"></script>
@@ -17,8 +17,14 @@
         </div>
         <div class="content-container">
             <img src="imagens/logo-AsMonasDaLonaPreta.svg" alt="Logo As Monas da Lona Preta">
-            <p> "Então, o corpo é meu, a vida é minha, eu faço o que eu quero…"</br></br>
-            <span class="autor">- Paulinho - </span></p>
+            <div id="typed-strings">
+                <p>Depois que eu descobri o MTST foi que eu tive mais liberdade. Eu não tinha liberdade antes. Eu tinha sempre medo.</br> - Bianca - </p>
+                <p>Pra mim é um orgulho. Eu tenho orgulho de ser o que eu sou!</br> - Paulinho - </p>
+                <p>É isso, nós trans não podemos desistir...e se a trans achar que melhor pra ela é o lugar onde ela quiser. É isso que eu acredito e espero para todas.</br> - Mel - </p>
+                <p>É por isso que foi feito o LGBT Sem Medo, pro pessoal lutar e tomar posse da sua casa de novo. Uma reintegração de posse do que é seu!</br> - Francisco - </p>
+                <p>É muita garra, é muita luta. A luta aqui é diária, né, e ser gay não é fácil, nunca foi e nunca vai se, né?</br> - Sandro - </p>
+            </div>
+            <span id="typed"></span>
             <button><a href="#historias"> Conheça as histórias</a></button>
         </div>
     </header>
@@ -166,6 +172,9 @@
             <button><a href="mailto:monasdalonapreta@gmail.com">monasdalonapreta@gmail.com</a></button>
         </div>
     </section>
+    <footer>
+        <p>Feito com carinho e resistência<img src="imagens/Pride_heart.svg">por Matheus Carvalho</p>
+    </footer>
     <script type="text/javascript">
         instafetch.init({
           accessToken: '14206436224.1677ed0.b82c2358be714b7fa44429ae51efdb47',
@@ -173,7 +182,17 @@
           numOfPics: 6  ,
           caption: false
         });
-      </script>
+    </script>
+    <script>
+        var typed = new Typed('#typed', {
+            stringsElement: '#typed-strings',
+            typeSpeed: 50,
+            backSpeed: 20,
+            backDelay: 1000,
+            startDelay: 1000,
+            loop: true,
+        });
+    </script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
 	<script src="js/masonry.pkgd.min.js"></script>
 	<script src="js/charming.min.js"></script>

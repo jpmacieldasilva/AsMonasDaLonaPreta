@@ -56,7 +56,7 @@ body{
 }
 
 .content-container > img{   
-    width: 250px;
+    width: 200px;
     height: auto;
 }
 
@@ -84,6 +84,20 @@ body{
 .content-container > button a{
     color: white;
 }
+
+
+#typed{
+    color: white;
+    width: 600px;
+    max-width: 80%;
+    height: 200px;
+    font-size: 2em;
+    text-align: center;
+    font-family: monospace;
+    align-items: center;
+}
+
+.typed-cursor{display: none;}
 
 
 .title-section{
@@ -167,6 +181,22 @@ body{
     width: 100%;
 }
 
+footer{
+    background-color: #000;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    align-items: center;
+    align-content: center;
+    line-height: 50px;
+}
+
+footer img{
+    width: 1em;
+    height: auto;
+    margin: 0 0.5em 0 0.5em;
+}
 
 @media screen and (min-width: 1016px) {
 .item4{
