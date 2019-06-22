@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>As Monas da Lona Preta</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ubs1svg.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    </script>
+</head>
+
+<body>
+        <nav class="menu-a" id="menu-full">
+                <img src="imagens/logo-AsMonasDaLonaPreta-vertical.svg">
+            <ul class="nav-menu">
+                    <li><a href="index.html">Histórias</a></li>
+                    <li><a href="sobre.html">Sobre o projeto</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/monasdalonapreta/"><img
+                                class="icon" src="imagens/instagram-icon.svg"></a></li>
+                </ul>
+    </nav>
+
+
+    
+    <div class="menu-mobile sobre" id="menu-mobile">
+
+
+        <nav role="navigation">
+                <a href="index.html"><img class="mobile-logo" src="imagens/logo-AsMonasDaLonaPreta-vertical-branco.svg"></a>
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <li><a href="#historias">Histórias</a></li>
+                    <li><a href="sobre.html">Sobre o projeto</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a target="_blank" rel="noopener noreferrer"
+                            href="https://www.instagram.com/monasdalonapreta/"><img class="icon"
+                                src="imagens/instagram-icon.svg"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    </div>
+    <section class="grid-wrap" id="conteudo">
+        <div class="title-section-projeto">
+            <h2>Sobre o projeto</h2>
+            <p>Para as LGBTs, a existência é um ato político. A descoberta da sexualidade e identidade de gênero
+                perpassam a vida de todas e todos nós, no país que mais mata LGBTs no mundo.
+                </br></br>Além de existir, a relação com a casa, a família, preconceito de moradia e o sonho da casa
+                própria muitas vezes são desafios para quem se encontra embaixo do arco-íris. E Monas da Lona Preta é
+                sobre tudo isso.
+                </br></br> O projeto Monas da Lona Preta veio contar as histórias de LGBTs que lutam por moradia.
+                </br></br>Viva as LGBTs Sem Medo!</p>
+        </div>
+    </section>
+    <footer>
+        <p>Feito com carinho e resistência<img src="imagens/Pride_heart.svg">por Matheus Carvalho</p>
+    </footer>
+    <script>
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        // Get the header
+        var header = document.getElementById("menu-full");
+        var mobile = document.getElementById("menu-mobile");
+        var parameter = document.getElementById("conteudo");
+
+        // Get the offset position of the navbar
+        var sticky = parameter.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+                mobile.classList.add("sticky");
+
+            } else {
+                header.classList.remove("sticky");
+                mobile.classList.remove("sticky");
+
+            }
+        }
+    </script>
+</body>
+
+</html> 

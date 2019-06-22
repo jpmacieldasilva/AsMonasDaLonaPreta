@@ -6,10 +6,21 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <link rel="stylesheet" href="https://use.typekit.net/ubs1svg.css">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/instafetch.js/1.5.0/instafetch.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/instafetch.js/1.5.0/instafetch.min.js">
+    </script>
     <link rel="stylesheet" type="text/css" href="css/base.css" />
-		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+    <script>
+        document.documentElement.className = "js";
+        var supportsCssVars = function () {
+            var e, t = document.createElement("style");
+            return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS &&
+                    window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode
+                .removeChild(t), e
+        };
+        supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+    </script>
 </head>
+
 <body>
     <header class="intro">
         <div class="intro-bg">
@@ -18,33 +29,61 @@
         <div class="content-container">
             <img src="imagens/logo-AsMonasDaLonaPreta.svg" alt="Logo As Monas da Lona Preta">
             <div id="typed-strings">
-                <p>Depois que eu descobri o MTST foi que eu tive mais liberdade. Eu não tinha liberdade antes. Eu tinha sempre medo.</br> - Bianca - </p>
+                <p>Depois que eu descobri o MTST foi que eu tive mais liberdade. Eu não tinha liberdade antes. Eu tinha
+                    sempre medo.</br> - Bianca - </p>
                 <p>Pra mim é um orgulho. Eu tenho orgulho de ser o que eu sou!</br> - Paulinho - </p>
-                <p>É isso, nós trans não podemos desistir...e se a trans achar que melhor pra ela é o lugar onde ela quiser. É isso que eu acredito e espero para todas.</br> - Mel - </p>
-                <p>É por isso que foi feito o LGBT Sem Medo, pro pessoal lutar e tomar posse da sua casa de novo. Uma reintegração de posse do que é seu!</br> - Francisco - </p>
-                <p>É muita garra, é muita luta. A luta aqui é diária, né, e ser gay não é fácil, nunca foi e nunca vai se, né?</br> - Sandro - </p>
+                <p>É isso, nós trans não podemos desistir...e se a trans achar que melhor pra ela é o lugar onde ela
+                    quiser. É isso que eu acredito e espero para todas.</br> - Mel - </p>
+                <p>É por isso que foi feito o LGBT Sem Medo, pro pessoal lutar e tomar posse da sua casa de novo. Uma
+                    reintegração de posse do que é seu!</br> - Francisco - </p>
+                <p>É muita garra, é muita luta. A luta aqui é diária, né, e ser gay não é fácil, nunca foi e nunca vai
+                    se, né?</br> - Sandro - </p>
             </div>
             <span id="typed"></span>
             <button><a href="#historias"> Conheça as histórias</a></button>
         </div>
     </header>
-    <section class="grid-wrap">
-        <div class="title-section-projeto">
-            <h2>Sobre o projeto</h2>
-            <p>Para as LGBTs, a existência é um ato político. A descoberta da sexualidade e identidade de gênero perpassam a vida de todas e todos nós, no país que mais mata LGBTs no mundo. 
-            </br></br>Além de existir, a relação com a casa, a família, preconceito de moradia e o sonho da casa própria muitas vezes são desafios para quem se encontra embaixo do arco-íris. E Monas da Lona Preta é sobre tudo isso.    
-        </br></br> O projeto Monas da Lona Preta veio contar as histórias de LGBTs que lutam por moradia.        
-    </br></br>Viva as LGBTs Sem Medo!</p>
-        </div>
-    </section>
+    <nav class="menu" id="menu-full">
+        <img src="imagens/logo-AsMonasDaLonaPreta-vertical.svg">
+        <ul class="nav-menu">
+            <li><a href="#historias">Histórias</a></li>
+            <li><a href="sobre.html">Sobre o projeto</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/monasdalonapreta/"><img
+                        class="icon" src="imagens/instagram-icon.svg"></a></li>
+        </ul>
+    </nav>
+    <div class="menu-mobile" id="menu-mobile">
+
+
+        <nav role="navigation">
+            <a href="index.html"><img class="mobile-logo" src="imagens/logo-AsMonasDaLonaPreta-vertical-branco.svg"></a>
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <li><a href="#historias">Histórias</a></li>
+                    <li><a href="sobre.html">Sobre o projeto</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a target="_blank" rel="noopener noreferrer"
+                            href="https://www.instagram.com/monasdalonapreta/"><img class="icon"
+                                src="imagens/instagram-icon.svg"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    </div>
+
     <section class="grid-wrap" id="historias">
         <div class="title-section">
             <h2>Do armário à lona preta</h2>
             <p>Conheça as histórias de pessoas LGBTs que vivem ou já viveram embaixo da lona preta.</p>
         </div>
         <div class="grid">
-            
-            <a href="#" class="grid__item 1" >
+
+            <a href="#" class="grid__item 1">
                 <div class="grid__item-bg"></div>
                 <div class="grid__item-wrap">
                     <img class="grid__item-img" src="imagens/Bianca-perfil.png " alt="Some image" />
@@ -84,7 +123,7 @@
                 <h3 class="grid__item-title"></h3>
                 <h4 class="grid__item-number">Francisco</h4>
             </a>
-            
+
         </div>
     </section><!-- /grid-wrap -->
     <div class="content">
@@ -95,10 +134,30 @@
             </div>
             <h3 class="content__item-subtitle">"Pode ser aqui, perto do Chê? "</h3>
             <div class="content__item-text">
-                <p>Depois que eu descobri o MTST foi que eu tive mais liberdade. Eu não tinha liberdade antes. Eu tinha sempre medo. Mas depois que eu conheci o movimento, eu comecei a conhecer pessoas diferentes. A Mel foi a primeira trans que eu conheci na minha vida. Meu primeiro contato com o MTST foi em 2014. Foi um pessoal lá na minha rua e descreveu o terreno. Falou que era abandonado, era depósito de lixo. Aí me interessei pelo movimento e no mesmo dia vi várias pessoas trazendo lona. Parei e pensei "não mano, será?". Fiquei com medo logo no início. Meu padrasto disse "vamo lá, vamo lá montar um barraquinho", aí a gente veio. Veio ele e eu montar o barraquinho. Na época tava chuvoso mas mesmo assim a gente tava aqui. Eu conheci mais pessoas como eu e achei maravilhoso. Aqui dentro eu não sofri preconceito não. Foi mais tranquilo, eu fui muito acolhida. Nunca tive medo de andar sozinha aqui dentro como eu tenho medo lá fora. Lá fora eu tenho medo de andar só. Aqui não. Posso andar por qualquer lugar da ocupação.</p>
-                <p>Meu nome é Bianca, sou natural de Fortaleza mas eu moro em São Paulo. Eu sempre fui lésbica, mas devido a minha família ser muito religiosa, isso me prendeu muito. Eu fui casada durante nove anos dentro de um relacionamento abusivo. Não era muito feliz...não era. </p>
-                <p>De uns tempos pra cá, depois que eu saí desse casamento, eu comecei a me relacionar com mulheres. Acho que era alguma coisa, assim, dentro de mim que eu queria mesmo, que tava dentro de mim...tava faltando. A minha alegria tinha voltado, eu conseguia sair, me divertir. Aí eu conheci uma pessoa também. Conheci uma pessoa que mudou tudo de repente… foi maravilhoso. A gente tá junta há 4 anos e a gente casou ano passado, em dezembro….foi maravilhoso.</p>
-                <p>A gente mora aqui pertinho da ocupação com minha filha. Foi extremamente difícil para ela introduzir que eu tinha mudado. Eu falei "filha a gente continua sendo uma família. tá bom? Isso nada muda. Agora você tem duas famílias, o papai e a namorada do papai, a mamãe e a namorada da mamãe. A mente dela agora tá totalmente aberta em relação a isso...isso não é mais problema...não é mais problema. E eu também tenho um menino de 2 anos.</p>
+                <p>Depois que eu descobri o MTST foi que eu tive mais liberdade. Eu não tinha liberdade antes. Eu tinha
+                    sempre medo. Mas depois que eu conheci o movimento, eu comecei a conhecer pessoas diferentes. A Mel
+                    foi a primeira trans que eu conheci na minha vida. Meu primeiro contato com o MTST foi em 2014. Foi
+                    um pessoal lá na minha rua e descreveu o terreno. Falou que era abandonado, era depósito de lixo. Aí
+                    me interessei pelo movimento e no mesmo dia vi várias pessoas trazendo lona. Parei e pensei "não
+                    mano, será?". Fiquei com medo logo no início. Meu padrasto disse "vamo lá, vamo lá montar um
+                    barraquinho", aí a gente veio. Veio ele e eu montar o barraquinho. Na época tava chuvoso mas mesmo
+                    assim a gente tava aqui. Eu conheci mais pessoas como eu e achei maravilhoso. Aqui dentro eu não
+                    sofri preconceito não. Foi mais tranquilo, eu fui muito acolhida. Nunca tive medo de andar sozinha
+                    aqui dentro como eu tenho medo lá fora. Lá fora eu tenho medo de andar só. Aqui não. Posso andar por
+                    qualquer lugar da ocupação.</p>
+                <p>Meu nome é Bianca, sou natural de Fortaleza mas eu moro em São Paulo. Eu sempre fui lésbica, mas
+                    devido a minha família ser muito religiosa, isso me prendeu muito. Eu fui casada durante nove anos
+                    dentro de um relacionamento abusivo. Não era muito feliz...não era. </p>
+                <p>De uns tempos pra cá, depois que eu saí desse casamento, eu comecei a me relacionar com mulheres.
+                    Acho que era alguma coisa, assim, dentro de mim que eu queria mesmo, que tava dentro de mim...tava
+                    faltando. A minha alegria tinha voltado, eu conseguia sair, me divertir. Aí eu conheci uma pessoa
+                    também. Conheci uma pessoa que mudou tudo de repente… foi maravilhoso. A gente tá junta há 4 anos e
+                    a gente casou ano passado, em dezembro….foi maravilhoso.</p>
+                <p>A gente mora aqui pertinho da ocupação com minha filha. Foi extremamente difícil para ela introduzir
+                    que eu tinha mudado. Eu falei "filha a gente continua sendo uma família. tá bom? Isso nada muda.
+                    Agora você tem duas famílias, o papai e a namorada do papai, a mamãe e a namorada da mamãe. A mente
+                    dela agora tá totalmente aberta em relação a isso...isso não é mais problema...não é mais problema.
+                    E eu também tenho um menino de 2 anos.</p>
                 <p>Eu fui muito acolhida aqui. Em casa foi mais difícil. Aqui a gente é acolhida!</p>
             </div>
         </div><!-- /content__item -->
@@ -109,11 +168,28 @@
             </div>
             <h3 class="content__item-subtitle">"Pode ser aqui mesmo, com a galera no fundo"</h3>
             <div class="content__item-text">
-                <p>Meu nome é Paulo, sou de São Paulo mesmo e tenho 31 anos. Sou um homem gay. Sou de uma ocupação na região metropolitana de SP. Eu estou lá há 2 anos, é meu tempo no movimento também e foi pra realizar o sonho da minha casa própria, de início.</p>
-                <p>A minha avó deu uma criação tipo: cada um cuida da sua vida e ninguém se envolve na vida de ninguém. É mais ou menos assim que funciona lá. E assim, minha família é literalmente toda evangélica e eu sou todo o oposto. Eu sou do contra. Eles são evangelico, eu sou espírita, do candomblé, pra piorar a situação, é. Eles acham que homem tem que casar com mulher, eu já acho que você tem que casar com quem você quiser. Então, o corpo é meu, a vida é minha, eu faço o que eu quero… </p>
-                <p>Nunca me cobraram nada, nunca falaram nada, tanto que quando eu me assumi foi aos 16 anos de idade. Eu sou independente desde os 12 anos de idade. Eu trabalho, me viro pra conquistar as minhas coisas. Então eu fui trabalhar muito cedo, paguei estudo, fiz as coisas tudo por mim mesmo. Assim meus tios, minha família, quando eles pensam em falar alguma coisa eu falo "Mano, vocês não me dão 1 kg de sal… pra falar ó, pra você salgar a sua comida", então quem é eles pra falar da minha vida? Ainda falo que se tem alguém que pode falar alguma coisa e opinar é minha vó porque ela me criou e é ela que me ajuda quando eu preciso. </p>
-                <p>Acho que piadinha de quebrada, piadinha besta de rua mesmo sempre vai ter. Eu acho que até quando o Francisco trouxe as rodas LGBT pra acontecer, ele visou em acabar exatamente com essas piadinhas, com esse preconceito dentro dos espaços coletivos do movimento. Mas eu não ligo, eu venho de favela, eu venho de quebrada, sou acostumado. Fui criado no meio de louco, eu acho que até o jeito de eu falar. Eu sou um viado muito estranho, eu falo que eu sou um viado maloqueiro, que eu falo gíria, falo "parça", "mano" é isso. Tô tentando falar bonitinho. (Risos)</p>
-                <p>Pra mim é um orgulho. Eu tenho orgulho de ser o que eu sou!</p>                
+                <p>Meu nome é Paulo, sou de São Paulo mesmo e tenho 31 anos. Sou um homem gay. Sou de uma ocupação na
+                    região metropolitana de SP. Eu estou lá há 2 anos, é meu tempo no movimento também e foi pra
+                    realizar o sonho da minha casa própria, de início.</p>
+                <p>A minha avó deu uma criação tipo: cada um cuida da sua vida e ninguém se envolve na vida de ninguém.
+                    É mais ou menos assim que funciona lá. E assim, minha família é literalmente toda evangélica e eu
+                    sou todo o oposto. Eu sou do contra. Eles são evangelico, eu sou espírita, do candomblé, pra piorar
+                    a situação, é. Eles acham que homem tem que casar com mulher, eu já acho que você tem que casar com
+                    quem você quiser. Então, o corpo é meu, a vida é minha, eu faço o que eu quero… </p>
+                <p>Nunca me cobraram nada, nunca falaram nada, tanto que quando eu me assumi foi aos 16 anos de idade.
+                    Eu sou independente desde os 12 anos de idade. Eu trabalho, me viro pra conquistar as minhas coisas.
+                    Então eu fui trabalhar muito cedo, paguei estudo, fiz as coisas tudo por mim mesmo. Assim meus tios,
+                    minha família, quando eles pensam em falar alguma coisa eu falo "Mano, vocês não me dão 1 kg de sal…
+                    pra falar ó, pra você salgar a sua comida", então quem é eles pra falar da minha vida? Ainda falo
+                    que se tem alguém que pode falar alguma coisa e opinar é minha vó porque ela me criou e é ela que me
+                    ajuda quando eu preciso. </p>
+                <p>Acho que piadinha de quebrada, piadinha besta de rua mesmo sempre vai ter. Eu acho que até quando o
+                    Francisco trouxe as rodas LGBT pra acontecer, ele visou em acabar exatamente com essas piadinhas,
+                    com esse preconceito dentro dos espaços coletivos do movimento. Mas eu não ligo, eu venho de favela,
+                    eu venho de quebrada, sou acostumado. Fui criado no meio de louco, eu acho que até o jeito de eu
+                    falar. Eu sou um viado muito estranho, eu falo que eu sou um viado maloqueiro, que eu falo gíria,
+                    falo "parça", "mano" é isso. Tô tentando falar bonitinho. (Risos)</p>
+                <p>Pra mim é um orgulho. Eu tenho orgulho de ser o que eu sou!</p>
             </div>
         </div><!-- /content__item -->
         <div class="content__item 3">
@@ -123,10 +199,25 @@
             </div>
             <h3 class="content__item-subtitle">"Quero tirar perto dos livros"</h3>
             <div class="content__item-text">
-                <p>"Quando eu me descobri mulher trans, tem aproximadamente 10 anos que eu me descobri mulher trans… Então eu tive que me separar da minha família, porque no começo, eu só tenho minha mãe né, então ela não me aceitou no início, eu tive que morar só, foi aí que eu passei um ano e meio na ocupação do MTST, morando aqui dentro como acampada, então eu conheci uma nova família. Aos poucos minha mãe se reaproximou. Hoje eu já tenho uma relação mais achegada com ela. Ela aprendeu a me respeitar e me aceitar...mas no começo eu enfrentei resistência.</p>
-                <p>A gente até fala, no começo que todas de nós temos a sua mãe de rua, que é aquela que ajuda a gente a se arrumar. A partir dos 20 anos que eu comecei a me transformar, eu só me transformava. Sexta, sábado e domingo eu virava menina e de Segunda a sexta eu era menino. Então eu era um transformista. Até os 30 eu me via assim… então eu tinha, realmente, as mais velhas que eu conhecia na noite, que era com quem eu fui me aprendendo...e eu me espelhei nelas, nas travestis mais antigas. Infelizmente tem uma delas que hoje ela tá falecida, ela foi assassinada. Eu tinha um carinho muito especial por ela, porque foi ela que foi como que minha mãe de rua.</p>
-                <p>Atualmente, eu estou como auxiliar de classe, né, sou professora formada. Com muitas lágrimas consegui me formar, consegui entrar no mercado de trabalho...não é fácil, eu saí esperando o não e fui atrás do sim. É isso, nós trans não podemos desistir...e se a trans achar que melhor pra ela é o lugar onde ela quiser. É isso que eu acredito e espero para todas.	</p>
-                <p>Eu espero...eu torço e eu vou lutar, vou resistir para que esse governo passe o mais rápido possível… é isso que eu espero para nós.</p>
+                <p>"Quando eu me descobri mulher trans, tem aproximadamente 10 anos que eu me descobri mulher trans…
+                    Então eu tive que me separar da minha família, porque no começo, eu só tenho minha mãe né, então ela
+                    não me aceitou no início, eu tive que morar só, foi aí que eu passei um ano e meio na ocupação do
+                    MTST, morando aqui dentro como acampada, então eu conheci uma nova família. Aos poucos minha mãe se
+                    reaproximou. Hoje eu já tenho uma relação mais achegada com ela. Ela aprendeu a me respeitar e me
+                    aceitar...mas no começo eu enfrentei resistência.</p>
+                <p>A gente até fala, no começo que todas de nós temos a sua mãe de rua, que é aquela que ajuda a gente a
+                    se arrumar. A partir dos 20 anos que eu comecei a me transformar, eu só me transformava. Sexta,
+                    sábado e domingo eu virava menina e de Segunda a sexta eu era menino. Então eu era um transformista.
+                    Até os 30 eu me via assim… então eu tinha, realmente, as mais velhas que eu conhecia na noite, que
+                    era com quem eu fui me aprendendo...e eu me espelhei nelas, nas travestis mais antigas. Infelizmente
+                    tem uma delas que hoje ela tá falecida, ela foi assassinada. Eu tinha um carinho muito especial por
+                    ela, porque foi ela que foi como que minha mãe de rua.</p>
+                <p>Atualmente, eu estou como auxiliar de classe, né, sou professora formada. Com muitas lágrimas
+                    consegui me formar, consegui entrar no mercado de trabalho...não é fácil, eu saí esperando o não e
+                    fui atrás do sim. É isso, nós trans não podemos desistir...e se a trans achar que melhor pra ela é o
+                    lugar onde ela quiser. É isso que eu acredito e espero para todas. </p>
+                <p>Eu espero...eu torço e eu vou lutar, vou resistir para que esse governo passe o mais rápido possível…
+                    é isso que eu espero para nós.</p>
                 <p>Eu sou a Mel, tenho 42 anos, sou nascida e criada aqui em São Paulo"</p>
             </div>
         </div><!-- /content__item -->
@@ -137,9 +228,26 @@
             </div>
             <h3 class="content__item-subtitle">"Ali em cima, com a bandeira do movimento"</h3>
             <div class="content__item-text">
-                <p>Em 2014, fiz uma viagem pra Recife com meu filho de 8 meses, na época, quando eu voltei, passou mais ou menos um mês, meu filho ficou doente, foi pra uma UTI, quase morreu. Depois de 23 dias no hospital ele teve alta. Passou uma semana, tive que voltar pro hospital pra fazer uns exames e foi um momento que eu tava bem triste, bem acabado, deprimido, preocupado ao mesmo tempo com o meu filho...e num sábado de manhã, dia 2 de maio de 2014 surge a ocupação do MTST...e eu pago aluguel né...eu pago aluguel, moro sozinho com meu filho, ele é adotado e foi um momento que eu tava bem frágil, bem debilitado e aí vim pra cá, pra ocupação, pq eu moro aqui perto. Foi uma necessidade. Necessidade pra não pagar aluguel.</p>
-                <p>Então, o meu recado para os LGBTs que vem pro MTST é não achar que tudo é maravilha, que aqui é um paraíso, porque não é. É muita garra, é muita luta. A luta aqui é diária, né, e ser gay não é fácil, nunca foi e nunca vai se, né? Como a gente diz, né, no GLB: Coragem, tem que ter muita coragem, muito peito porque senão não aguenta. Eu falo porque (pode continuar?) Eu falo porque comigo foi assim, cheguei aqui na ocupação (Copa do Povo), a Copa do Povo me trouxe bastante felicidade no momento que eu mais precisei, eu fiz muita amizade, muita amizade com pessoas que veio de outra ocupação, inclusive da Palestina (ocupação) né. Vou citar o nome dela aqui, porque senti de citar e eu vou citar:</p>
-                <p>Simone Peres, uma mulher que lutava muito pela Copa do Povo, uma mulher que lutou muito pela Palestina, mas infelizmente Deus a levou, né.  Uma pessoa que me ensinou muita coisa, quem é quem, quem são os verdadeiros, quem não são e hoje eu carrego ela dentro do meu coração, cara. Carrego ela dentro do meu coração e, é isso.</p>
+                <p>Em 2014, fiz uma viagem pra Recife com meu filho de 8 meses, na época, quando eu voltei, passou mais
+                    ou menos um mês, meu filho ficou doente, foi pra uma UTI, quase morreu. Depois de 23 dias no
+                    hospital ele teve alta. Passou uma semana, tive que voltar pro hospital pra fazer uns exames e foi
+                    um momento que eu tava bem triste, bem acabado, deprimido, preocupado ao mesmo tempo com o meu
+                    filho...e num sábado de manhã, dia 2 de maio de 2014 surge a ocupação do MTST...e eu pago aluguel
+                    né...eu pago aluguel, moro sozinho com meu filho, ele é adotado e foi um momento que eu tava bem
+                    frágil, bem debilitado e aí vim pra cá, pra ocupação, pq eu moro aqui perto. Foi uma necessidade.
+                    Necessidade pra não pagar aluguel.</p>
+                <p>Então, o meu recado para os LGBTs que vem pro MTST é não achar que tudo é maravilha, que aqui é um
+                    paraíso, porque não é. É muita garra, é muita luta. A luta aqui é diária, né, e ser gay não é fácil,
+                    nunca foi e nunca vai se, né? Como a gente diz, né, no GLB: Coragem, tem que ter muita coragem,
+                    muito peito porque senão não aguenta. Eu falo porque (pode continuar?) Eu falo porque comigo foi
+                    assim, cheguei aqui na ocupação (Copa do Povo), a Copa do Povo me trouxe bastante felicidade no
+                    momento que eu mais precisei, eu fiz muita amizade, muita amizade com pessoas que veio de outra
+                    ocupação, inclusive da Palestina (ocupação) né. Vou citar o nome dela aqui, porque senti de citar e
+                    eu vou citar:</p>
+                <p>Simone Peres, uma mulher que lutava muito pela Copa do Povo, uma mulher que lutou muito pela
+                    Palestina, mas infelizmente Deus a levou, né. Uma pessoa que me ensinou muita coisa, quem é quem,
+                    quem são os verdadeiros, quem não são e hoje eu carrego ela dentro do meu coração, cara. Carrego ela
+                    dentro do meu coração e, é isso.</p>
                 <p>Sandro, 36 anos. Sou gay, fotógrafo e decorador de festas.</p>
             </div>
         </div><!-- /content__item -->
@@ -150,37 +258,59 @@
             </div>
             <h3 class="content__item-subtitle"></h3>
             <div class="content__item-text">
-                <p>Meu nome é Francisco de Santos, tenho 43 anos e moro aqui em São Paulo. Sou nordestino, do Estado do Piauí, vim pra São Paulo com 14 anos de idade. Eu fui expulso de casa com 17 anos de idade. Com 17 anos de idade meu pai me expulsou, fiquei na rua, desempregado aqui em São Paulo, só porque eu era gay. Nem sabia pra onde ir, fiquei sem destino, entendeu? Morei com vários parentes, com primos, primas, sempre ficava trocando de lugar.</p>
-                <p>Aí eu conheci o MTST. Meu irmão e minha cunhada fizeram esse barraco pra mim lá na ocupação. Eu falei "eu num vou não, não vou me misturar com esse pessoal não, sai fora, tá doido". Mas eu peguei e fui, com medo de tudo, no escuro, fiquei lá assistindo a assembleia, as reunião, aí eles começaram a falar que não pediam dinheiro, começaram a falar que só a participação. Eu vi que no MTST tinha várias pessoas LGBT que era expulsa de casa e num tinha onde morar. O MTST não tinha uma política LGBT. Ele defendia a pauta mas não tinha aquela política. Aí eu queria fazer alguma coisa. Foi aí que eu fui, criei a frente LGBT Sem Medo, do MTST que é pra acolher esse pessoal. Eu entrei no movimento num foi nem pelo teto pra morar, foi só pra ajudar o público LGBT.</p>
-                <p>Em 2017, lá em Guarulhos, a gente fez a primeira roda de conversa LGBT e daí surgiu uma frente LGBT pra dar acolhimento a esse pessoal. É um pessoal sofrido, que já é expulso de casa, é o pessoal que fica na rua, já sofre preconceito porque é LGBT, sofre preconceito porque é periférico, aí sofre preconceito porque é "invasores de terreno". LGBT só sofre no mundo. E no movimento é seguro. O pessoal aceita. Assim, todo lugar tem homofobia, tem uns que aceita, outros que não aceita mas, assim, no movimento eles dão aquela proteção pra gente.</p>
-                <p>Com o tempo eu voltei pra casa do meu pai de novo, ficou tudo de boa e aceitou tudo de boa. É por isso que foi feito o LGBT Sem Medo, pro pessoal lutar e tomar posse da sua casa de novo. Uma reintegração de posse do que é seu!</p>
+                <p>Meu nome é Francisco , tenho 43 anos e moro aqui em São Paulo. Sou nordestino, do Estado do
+                    Piauí, vim pra São Paulo com 14 anos de idade. Eu fui expulso de casa com 17 anos de idade. Com 17
+                    anos de idade meu pai me expulsou, fiquei na rua, desempregado aqui em São Paulo, só porque eu era
+                    gay. Nem sabia pra onde ir, fiquei sem destino, entendeu? Morei com vários parentes, com primos,
+                    primas, sempre ficava trocando de lugar.</p>
+                <p>Aí eu conheci o MTST. Meu irmão e minha cunhada fizeram esse barraco pra mim lá na ocupação. Eu falei
+                    "eu num vou não, não vou me misturar com esse pessoal não, sai fora, tá doido". Mas eu peguei e fui,
+                    com medo de tudo, no escuro, fiquei lá assistindo a assembleia, as reunião, aí eles começaram a
+                    falar que não pediam dinheiro, começaram a falar que só a participação. Eu vi que no MTST tinha
+                    várias pessoas LGBT que era expulsa de casa e num tinha onde morar. O MTST não tinha uma política
+                    LGBT. Ele defendia a pauta mas não tinha aquela política. Aí eu queria fazer alguma coisa. Foi aí
+                    que eu fui, criei a frente LGBT Sem Medo, do MTST que é pra acolher esse pessoal. Eu entrei no
+                    movimento num foi nem pelo teto pra morar, foi só pra ajudar o público LGBT.</p>
+                <p>Em 2017, lá em Guarulhos, a gente fez a primeira roda de conversa LGBT e daí surgiu uma frente LGBT
+                    pra dar acolhimento a esse pessoal. É um pessoal sofrido, que já é expulso de casa, é o pessoal que
+                    fica na rua, já sofre preconceito porque é LGBT, sofre preconceito porque é periférico, aí sofre
+                    preconceito porque é "invasores de terreno". LGBT só sofre no mundo. E no movimento é seguro. O
+                    pessoal aceita. Assim, todo lugar tem homofobia, tem uns que aceita, outros que não aceita mas,
+                    assim, no movimento eles dão aquela proteção pra gente.</p>
+                <p>Com o tempo eu voltei pra casa do meu pai de novo, ficou tudo de boa e aceitou tudo de boa. É por
+                    isso que foi feito o LGBT Sem Medo, pro pessoal lutar e tomar posse da sua casa de novo. Uma
+                    reintegração de posse do que é seu!</p>
             </div>
         </div><!-- /content__item -->
-        <button class="content__close">Close</button>
-        <svg class="content__indicator icon icon--caret"><use xlink:href="#icon-caret"></use></svg>
+        <button class="content__close">Voltar</button>
+        <svg class="content__indicator icon icon--caret">
+            <use xlink:href="#icon-caret"></use>
+        </svg>
     </div>
     <section class="grid-wrap">
-            <div class="title-section">
-                <h2>Monas no insta</h2>
-                <p>Siga o nosso projeto no insta. Lá vamos continuar contando novas histórias e dados sobre a vida da comunidade LGBT dentro do Movimento do Trabalhadores Sem Teto</p>
-            </div>
-            <div id="instafetch"></div>
+        <div class="title-section">
+            <h2>Monas no insta</h2>
+            <p>Siga o nosso projeto no insta. Lá vamos continuar contando novas histórias e dados sobre a vida da
+                comunidade LGBT dentro do Movimento do Trabalhadores Sem Teto</p>
+        </div>
+        <div id="instafetch"></div>
     </section>
-    <section class="contato grid-wrap">
-         <div class="title-section">
-             <h2>Quer contar uma história?</h2>
+    <section class="contato grid-wrap" id="contato">
+        <div class="title-section">
+            <h2>Quer contar uma história?</h2>
             <button><a href="mailto:monasdalonapreta@gmail.com">monasdalonapreta@gmail.com</a></button>
         </div>
     </section>
     <footer>
         <p>Feito com carinho e resistência<img src="imagens/Pride_heart.svg">por Matheus Carvalho</p>
     </footer>
+
     <script type="text/javascript">
         instafetch.init({
-          accessToken: '14206436224.1677ed0.b82c2358be714b7fa44429ae51efdb47',
-          target: 'instafetch',
-          numOfPics: 6  ,
-          caption: false
+            accessToken: '14206436224.1677ed0.b82c2358be714b7fa44429ae51efdb47',
+            target: 'instafetch',
+            numOfPics: 6,
+            caption: false
         });
     </script>
     <script>
@@ -193,9 +323,35 @@
             loop: true,
         });
     </script>
+    <script>
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        // Get the header
+        var header = document.getElementById("menu-full");
+        var mobile = document.getElementById("menu-mobile");
+        var parameter = document.getElementById("historias");
+
+        // Get the offset position of the navbar
+        var sticky = parameter.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+                mobile.classList.add("sticky");
+
+            } else {
+                header.classList.remove("sticky");
+                mobile.classList.remove("sticky");
+
+            }
+        }
+    </script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
-	<script src="js/masonry.pkgd.min.js"></script>
-	<script src="js/charming.min.js"></script>
-	<script src="js/TweenMax.min.js"></script>
-	<script src="js/demo.js"></script>
-</body> 
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/charming.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/demo.js"></script>
+</body>
