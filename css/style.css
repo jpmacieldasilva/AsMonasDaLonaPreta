@@ -277,6 +277,8 @@ footer {
     bottom: 0;
 }
 
+.fixed{ position: absolute;}
+
 footer img {
     width: 1em;
     height: auto;
