@@ -206,6 +206,7 @@ body {
 .sobre {
     font-size: 2.8 em !important;
     z-index: 999999;
+    opacity: 1;
 }
 
 .title-section-projeto h2 {
@@ -272,7 +273,7 @@ footer {
     align-items: center;
     align-content: center;
     line-height: 50px;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
 }
 
